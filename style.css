@@ -49,3 +49,40 @@ tr:first-child {
 tr:nth-child(3n) td {
     border-bottom: solid #0d47a1;
 }
+
+@media screen and (max-width: 1100px) {
+    .container{
+        max-width: 100%;
+    }
+    .brand-logo{
+        width: 100%;
+    }
+    .buttons {
+        position: initial;
+        width: auto;
+        padding: 3%;
+    }
+    .buttons ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .buttons li {
+        flex-grow: 1;
+        padding: 2% !important;
+    }
+    .buttons li.collection-header {
+        width: 100%;
+        flex-grow: 1;
+    }
+    td {
+        padding: 1.5% 0;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    td {
+        padding: 0.3% 0;
+        height: auto;
+    }
+}
