@@ -1,52 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Sudoku</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <nav class="blue darken-4">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="" class="brand-logo">Sudoku</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="">Felipe Schmidt</a></li>
-                    <li><a href="">Gabriel Walker</a></li>
-                    <li><a href="">Luis Tabile</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="" class="brand-logo">Sudoku Solver</a>
         </div>
+      </div>
     </nav>
 
     <div class="container">
-        <table id="table" class="table"></table>
+      <table id="table" class="table"></table>
     </div>
 
     <div class="buttons">
-        <ul class="collection with-header">
-            <li class="collection-header"><h5>Novo Jogo</h5></li>
-            <li class="collection-item"><button class="btn blue darken-4 btn-size" name="action" onclick="getBoard(`easy`)">Fácil</button></li>
-            <li class="collection-item"><button class="btn blue darken-4 btn-size" name="action" onclick="getBoard(`medium`)">Médio</button></li>
-            <li class="collection-item"><button class="btn blue darken-4 btn-size" name="action" onclick="getBoard(`hard`)">Difícil</button></li>
-            <li class="collection-header"><h5>Resolução</h5></li>
-            <li class="collection-item"><button class="btn blue darken-4 btn-size" name="action" onclick="solve()">Resolver</button></li>
-            <li class="collection-item"><button class="btn blue darken-4 btn-size" name="action" onclick="stop()">Parar</button></li>
-            <li class="collection-item"><button class="btn blue darken-4 btn-size" name="action" onclick="resume()">Continuar</button></li>
-            <li class="collection-header"><h5>Delay</h5></li>
-            <li class="collection-item"><button class="btn blue darken-4 btn-size" name="action" onclick="beFaster()">Acelerar</button></li>
-            <li class="collection-item"><button class="btn blue darken-4 btn-size" name="action" onclick="beSlower()">Desacelerar</button></li>
-        </ul>
+      <ul class="collection with-header">
+        <li class="collection-header"><h5>Novo Jogo</h5></li>
+        <li class="collection-item">
+          <button
+            class="btn blue darken-4 btn-size"
+            name="action"
+            onclick="getBoard(`easy`)"
+          >
+            Fácil
+          </button>
+        </li>
+        <li class="collection-item">
+          <button
+            class="btn blue darken-4 btn-size"
+            name="action"
+            onclick="getBoard(`medium`)"
+          >
+            Médio
+          </button>
+        </li>
+        <li class="collection-item">
+          <button
+            class="btn blue darken-4 btn-size"
+            name="action"
+            onclick="getBoard(`hard`)"
+          >
+            Difícil
+          </button>
+        </li>
+        <li class="collection-header"><h5>Resolução</h5></li>
+        <li class="collection-item">
+          <button
+            class="btn blue darken-4 btn-size"
+            name="action"
+            onclick="solve()"
+          >
+            Resolver
+          </button>
+        </li>
+        <li class="collection-item">
+          <button
+            class="btn blue darken-4 btn-size"
+            name="action"
+            onclick="stop()"
+          >
+            Parar
+          </button>
+        </li>
+        <li class="collection-item">
+          <button
+            class="btn blue darken-4 btn-size"
+            name="action"
+            onclick="resume()"
+          >
+            Continuar
+          </button>
+        </li>
+        <li class="collection-header"><h5>Delay</h5></li>
+        <li class="collection-item">
+          <button
+            class="btn blue darken-4 btn-size"
+            name="action"
+            onclick="beFaster()"
+          >
+            Acelerar
+          </button>
+        </li>
+        <li class="collection-item">
+          <button
+            class="btn blue darken-4 btn-size"
+            name="action"
+            onclick="beSlower()"
+          >
+            Desacelerar
+          </button>
+        </li>
+      </ul>
     </div>
 
     <script src="index.js"></script>
-
-</body>
-
+  </body>
 </html>
